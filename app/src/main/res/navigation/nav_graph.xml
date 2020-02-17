@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/botones">
+    <fragment
+        android:id="@+id/botones"
+        android:name="com.uninorte.hojadevida.Botones"
+        android:label="fragment_botones"
+        tools:layout="@layout/fragment_botones" >
+        <action
+            android:id="@+id/action_botones_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.uninorte.hojadevida.MainFragment"
+        android:label="MainFragment" />
+</navigation>
